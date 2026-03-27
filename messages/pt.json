@@ -1,0 +1,125 @@
+{
+  "nav": { "home": "Início", "jobs": "Vagas", "hire": "Contratar Talentos", "about": "Sobre Nós" },
+  "hero": {
+    "badge": "Talentos Tech Globais",
+    "headline": "Contrate os Melhores Talentos Tech do Brasil para Sua Empresa nos EUA",
+    "sub": "A DEXO conecta empresas americanas com profissionais de tecnologia altamente qualificados do Brasil — mais rápido, inteligente e com melhor custo-benefício.",
+    "cta_hire": "Contratar Talentos",
+    "cta_jobs": "Explorar Vagas"
+  },
+  "about": {
+    "badge": "Sobre a DEXO",
+    "headline": "8+ Anos Conectando Times Globais de Tecnologia",
+    "desc": "A DEXO é uma consultoria global de recrutamento especializada em conectar empresas americanas com os melhores talentos tech do Brasil. Com mais de 8 anos de experiência em recrutamento internacional, sabemos identificar excelência.",
+    "stat1_val": "8+", "stat1_label": "Anos de Experiência",
+    "stat2_val": "200+", "stat2_label": "Colocações",
+    "stat3_val": "98%", "stat3_label": "Satisfação dos Clientes",
+    "stat4_val": "15+", "stat4_label": "Países"
+  },
+  "services": {
+    "badge": "Serviços",
+    "headline": "Como Ajudamos Você a Escalar",
+    "rec_title": "Recrutamento",
+    "rec_desc": "Identificamos, avaliamos e apresentamos os melhores talentos tech para suas vagas. De Salesforce a full-stack — encontramos quem você precisa.",
+    "out_title": "Outsourcing",
+    "out_desc": "Construa times tech dedicados que funcionam como extensão da sua empresa. Modelos de engajamento flexíveis com suporte completo."
+  },
+  "process": {
+    "badge": "Nosso Processo",
+    "headline": "Um Processo de Seleção Rigoroso",
+    "sub": "Cada candidato é validado antes de você conhecê-lo.",
+    "s1_num": "01", "s1_title": "Entrevista Técnica", "s1_desc": "Avaliação profunda de habilidades técnicas pelo nosso time sênior.",
+    "s2_num": "02", "s2_title": "Teste de Inglês", "s2_desc": "Avaliação de proficiência em inglês profissional para comunicação com times nos EUA.",
+    "s3_num": "03", "s3_title": "Teste Técnico", "s3_desc": "Avaliação técnica prática opcional específica para a vaga.",
+    "s4_num": "04", "s4_title": "Entrevista com o Cliente", "s4_desc": "Entrevista final com você. Você só conhece candidatos que passaram em todas as etapas."
+  },
+  "value": {
+    "badge": "Por que a DEXO",
+    "headline": "A Forma Mais Inteligente de Contratar",
+    "i1_t": "Talentos de Elite", "i1_d": "Profissionais tech sênior pré-avaliados do melhor pool de talentos do Brasil.",
+    "i2_t": "Melhor Custo-Benefício", "i2_d": "Engenheiros de classe mundial por uma fração dos valores do mercado americano.",
+    "i3_t": "Contratação Mais Rápida", "i3_d": "Nosso processo reduz drasticamente o tempo de contratação. Sem triagens intermináveis.",
+    "i4_t": "Risco Reduzido", "i4_d": "Avaliação rigorosa significa que você só conhece candidatos realmente preparados.",
+    "i5_t": "Processo Estruturado", "i5_d": "Cada colocação segue uma metodologia validada. Resultados consistentes.",
+    "i6_t": "Suporte Contínuo", "i6_d": "Acompanhamos você durante o onboarding e além."
+  },
+  "diff": {
+    "badge": "Nosso Compromisso",
+    "headline": "Como Trabalhamos Com Você",
+    "d1_t": "Mínimo 3 Candidatos Por Vaga",
+    "d1_d": "Para cada vaga aberta, apresentamos pelo menos 3 candidatos qualificados. Continuamos enviando perfis até você encontrar o fit ideal.",
+    "d2_t": "Desconto na Segunda Contratação",
+    "d2_d": "Ao preencher sua segunda vaga com a DEXO, você recebe um desconto percentual. Construir uma parceria de longo prazo compensa."
+  },
+  "form": {
+    "badge": "Comece Agora",
+    "headline": "Pronto para Contratar de Forma Inteligente?",
+    "sub": "Preencha o formulário e retornaremos em até 24 horas.",
+    "required": "Este campo é obrigatório",
+    "invalid_email": "Por favor, insira um e-mail válido",
+    "invalid_url": "Por favor, insira uma URL válida",
+    "min_message": "Por favor, forneça mais detalhes (pelo menos 10 caracteres)"
+  },
+  "footer": {
+    "tagline": "Talentos Tech Globais",
+    "linkedin": "LinkedIn",
+    "about": "Sobre Nós",
+    "rights": "Todos os direitos reservados."
+  },
+  "jobs_page": {
+    "badge": "Vagas Abertas",
+    "headline": "Faça Parte de Times Tech Globais",
+    "sub": "Trabalhe com empresas americanas remotamente. Remuneração competitiva, times de classe mundial.",
+    "no_jobs": "Nenhuma vaga disponível no momento. Volte em breve!",
+    "expires_in": "Expira em",
+    "days": "dias",
+    "type": "Tempo Integral", "location": "Remoto",
+    "apply": "Candidatar-se",
+    "requirements": "Requisitos",
+    "responsibilities": "Responsabilidades",
+    "close": "Fechar",
+    "apply_now": "Candidatar-se Agora",
+    "posted": "Publicada em"
+  },
+  "expertise": {
+    "tab_domains": "Domínios Tech",
+    "tab_services": "Serviços",
+    "tab_approach": "Nossa Abordagem",
+    "domains_desc": "Fornecemos especialistas validados nas principais tecnologias do mercado, com foco em qualidade e aderência cultural.",
+    "services_desc": "Do mapeamento de perfil à integração do profissional — cobrimos todo o ciclo de contratação com precisão.",
+    "approach_desc": "Nossa metodologia comprovada garante resultados consistentes e parcerias de longo prazo.",
+    "explore_domains": "Ver todos os domínios",
+    "explore_services": "Ver todos os serviços",
+    "explore_approach": "Conhecer nossa abordagem",
+    "d1": "Frontend", "d2": "Backend", "d3": "Fullstack", "d4": "Salesforce", "d5": "DevOps", "d6": "Dados & IA",
+    "s1": "Recrutamento Permanente", "s2": "Contratação por Contrato", "s3": "Outsourcing de Times", "s4": "Triagem Técnica", "s5": "Estratégia de Talentos", "s6": "Suporte ao Onboarding",
+    "a1": "Mercado Americano", "a2": "Pool de Talentos BR", "a3": "Times Remotos", "a4": "Eficiência de Custo", "a5": "Redução de Risco", "a6": "Colocação Rápida"
+  },
+  "industries_section": {
+    "tab_industries": "Indústrias",
+    "tab_services": "Serviços",
+    "tab_solutions": "Soluções",
+    "ind_headline": "Conectamos talentos tech nas principais indústrias do mercado",
+    "ind_desc": "De fintech à saúde, fornecemos profissionais tech brasileiros validados para empresas que constroem o futuro em cada setor.",
+    "ind_explore": "Ver todas as indústrias",
+    "svc_headline": "Serviços completos de contratação adaptados às suas necessidades",
+    "svc_desc": "Do primeiro perfil ao onboarding bem-sucedido — nossos serviços cobrem cada etapa da jornada de contratação com precisão e velocidade.",
+    "svc_explore": "Ver todos os serviços",
+    "sol_headline": "Soluções proprietárias que aceleram sua contratação",
+    "sol_desc": "A metodologia e ferramentas da DEXO foram criadas para reduzir o tempo de contratação, melhorar a qualidade dos candidatos e construir parcerias de talentos de longo prazo.",
+    "sol_explore": "Ver todas as soluções"
+  },
+  "about_page": {
+    "badge": "Nossa História",
+    "headline": "Conectando Talentos, Construindo Times",
+    "desc": "A DEXO nasceu de uma missão simples: conectar as melhores mentes em tecnologia do Brasil com empresas americanas que buscam excelência. Com mais de 8 anos de experiência, nos tornamos uma referência em recrutamento tech global.",
+    "mission_title": "Nossa Missão",
+    "mission_desc": "Ser a ponte mais eficiente e confiável entre talentos tech brasileiros e empresas americanas, criando oportunidades de crescimento mútuo.",
+    "vision_title": "Nossa Visão",
+    "vision_desc": "Um mundo onde fronteiras geográficas não limitam o acesso a talentos excepcionais.",
+    "values_title": "Nossos Valores",
+    "v1": "Excelência", "v2": "Transparência", "v3": "Agilidade", "v4": "Parceria",
+    "team_title": "Por que a DEXO?",
+    "team_desc": "Combinamos profundo conhecimento do mercado brasileiro de tecnologia com total entendimento das exigências do mercado americano. O resultado: matches precisos, contratações mais rápidas e times de alta performance."
+  }
+}

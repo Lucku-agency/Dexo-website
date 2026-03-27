@@ -1,0 +1,125 @@
+{
+  "nav": { "home": "Home", "jobs": "Jobs", "hire": "Hire Talent", "about": "About Us" },
+  "hero": {
+    "badge": "Global Tech Talent",
+    "headline": "Hire Elite Brazilian Tech Talent for Your U.S. Company",
+    "sub": "DEXO connects U.S. companies with highly qualified tech professionals from Brazil — faster, smarter, and more cost-effective than traditional hiring.",
+    "cta_hire": "Hire Talent",
+    "cta_jobs": "Explore Jobs"
+  },
+  "about": {
+    "badge": "About DEXO",
+    "headline": "8+ Years Connecting Global Tech Teams",
+    "desc": "DEXO is a global recruitment consultancy specialized in connecting U.S. companies with top-tier Brazilian tech talent. With over 8 years of international recruitment experience, we understand what great looks like.",
+    "stat1_val": "8+", "stat1_label": "Years Experience",
+    "stat2_val": "200+", "stat2_label": "Placements",
+    "stat3_val": "98%", "stat3_label": "Client Satisfaction",
+    "stat4_val": "15+", "stat4_label": "Countries"
+  },
+  "services": {
+    "badge": "Services",
+    "headline": "How We Help You Scale",
+    "rec_title": "Recruitment",
+    "rec_desc": "We identify, vet, and present the best tech talent for your open positions. From Salesforce to full-stack — we find who you need.",
+    "out_title": "Outsourcing",
+    "out_desc": "Build dedicated tech teams that work as an extension of your company. Flexible engagement models with full support."
+  },
+  "process": {
+    "badge": "Our Process",
+    "headline": "A Rigorous Selection Process",
+    "sub": "Every candidate is validated before you meet them.",
+    "s1_num": "01", "s1_title": "Technical Interview", "s1_desc": "Deep assessment of technical skills by our senior tech team.",
+    "s2_num": "02", "s2_title": "English Test", "s2_desc": "Professional English proficiency evaluation for U.S. team communication.",
+    "s3_num": "03", "s3_title": "Technical Test", "s3_desc": "Optional role-specific hands-on technical assessment.",
+    "s4_num": "04", "s4_title": "Client Interview", "s4_desc": "Final interview with you. You only meet candidates who passed every step."
+  },
+  "value": {
+    "badge": "Why DEXO",
+    "headline": "The Smarter Way to Hire",
+    "i1_t": "Top-Tier Talent", "i1_d": "Pre-vetted senior tech professionals from Brazil's best talent pool.",
+    "i2_t": "Better Cost-Benefit", "i2_d": "World-class engineers at a fraction of U.S. market rates.",
+    "i3_t": "Faster Hiring", "i3_d": "Our process cuts time-to-hire dramatically. No endless screening.",
+    "i4_t": "Reduced Risk", "i4_d": "Rigorous vetting means you only meet truly ready candidates.",
+    "i5_t": "Structured Process", "i5_d": "Every placement follows a validated methodology. Consistent results.",
+    "i6_t": "Ongoing Support", "i6_d": "We stay with you through onboarding and beyond."
+  },
+  "diff": {
+    "badge": "Our Commitment",
+    "headline": "How We Work With You",
+    "d1_t": "Minimum 3 Candidates Per Role",
+    "d1_d": "For every open position, we present at least 3 qualified candidates. We keep sending profiles until you find the right fit.",
+    "d2_t": "Discount on Your Second Hire",
+    "d2_d": "When you fill your second position with DEXO, you receive a percentage discount. Building a long-term partnership pays off."
+  },
+  "form": {
+    "badge": "Get Started",
+    "headline": "Ready to Hire Smarter?",
+    "sub": "Fill out the form and we will get back to you within 24 hours.",
+    "required": "This field is required",
+    "invalid_email": "Please enter a valid email",
+    "invalid_url": "Please enter a valid URL",
+    "min_message": "Please provide more details (at least 10 characters)"
+  },
+  "footer": {
+    "tagline": "Global Tech Talent",
+    "linkedin": "LinkedIn",
+    "about": "About Us",
+    "rights": "All rights reserved."
+  },
+  "jobs_page": {
+    "badge": "Open Positions",
+    "headline": "Join Global Tech Teams",
+    "sub": "Work with U.S. companies remotely. Competitive pay, world-class teams.",
+    "no_jobs": "No positions available at the moment. Check back soon!",
+    "expires_in": "Expires in",
+    "days": "days",
+    "type": "Full-time", "location": "Remote",
+    "apply": "Apply Now",
+    "requirements": "Requirements",
+    "responsibilities": "Responsibilities",
+    "close": "Close",
+    "apply_now": "Apply Now",
+    "posted": "Posted on"
+  },
+  "expertise": {
+    "tab_domains": "Tech Domains",
+    "tab_services": "Services",
+    "tab_approach": "Our Approach",
+    "domains_desc": "We provide validated specialists across the most in-demand technology stacks, focused on quality and cultural fit.",
+    "services_desc": "From profile mapping to onboarding — we cover the full hiring cycle with precision.",
+    "approach_desc": "Our proven methodology ensures consistent results and long-term partnerships.",
+    "explore_domains": "Explore all domains",
+    "explore_services": "Explore all services",
+    "explore_approach": "Learn our approach",
+    "d1": "Frontend", "d2": "Backend", "d3": "Fullstack", "d4": "Salesforce", "d5": "DevOps", "d6": "Data & AI",
+    "s1": "Permanent Placement", "s2": "Contract Staffing", "s3": "Team Outsourcing", "s4": "Technical Vetting", "s5": "Talent Strategy", "s6": "Onboarding Support",
+    "a1": "U.S. Market", "a2": "Brazilian Talent Pool", "a3": "Remote Teams", "a4": "Cost Efficiency", "a5": "Risk Reduction", "a6": "Fast Placement"
+  },
+  "industries_section": {
+    "tab_industries": "Industries",
+    "tab_services": "Services",
+    "tab_solutions": "Solutions",
+    "ind_headline": "We connect tech talent across all major industries",
+    "ind_desc": "From fintech to healthcare, we provide validated Brazilian tech professionals to companies building the future in every sector.",
+    "ind_explore": "Explore all industries",
+    "svc_headline": "End-to-end hiring services tailored to your needs",
+    "svc_desc": "From the first profile to successful onboarding — our services cover every step of the hiring journey with precision and speed.",
+    "svc_explore": "Explore all services",
+    "sol_headline": "Proprietary solutions that accelerate your hiring",
+    "sol_desc": "DEXO's methodology and tools are purpose-built to reduce time-to-hire, improve candidate quality, and build long-term talent partnerships.",
+    "sol_explore": "Explore all solutions"
+  },
+  "about_page": {
+    "badge": "Our Story",
+    "headline": "Connecting Talent, Building Teams",
+    "desc": "DEXO was born from a simple mission: connect the brightest tech minds in Brazil with U.S. companies that demand excellence. With over 8 years of experience, we have become a trusted reference in global tech recruitment.",
+    "mission_title": "Our Mission",
+    "mission_desc": "To be the most efficient and reliable bridge between Brazilian tech talent and U.S. companies, creating mutual growth opportunities.",
+    "vision_title": "Our Vision",
+    "vision_desc": "A world where geographic boundaries do not limit access to exceptional talent.",
+    "values_title": "Our Values",
+    "v1": "Excellence", "v2": "Transparency", "v3": "Agility", "v4": "Partnership",
+    "team_title": "Why DEXO?",
+    "team_desc": "We combine deep knowledge of the Brazilian tech market with a full understanding of U.S. hiring standards. The result: precise matches, faster placements, and high-performance teams."
+  }
+}
