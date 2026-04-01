@@ -13,8 +13,7 @@
     "desc": "A DEXO é uma consultoria global de recrutamento especializada em conectar empresas americanas com os melhores talentos tech do Brasil. Com mais de 8 anos de experiência em recrutamento internacional, sabemos identificar excelência.",
     "stat1_val": "8+", "stat1_label": "Anos de Experiência",
     "stat2_val": "200+", "stat2_label": "Colocações",
-    "stat3_val": "98%", "stat3_label": "Satisfação dos Clientes",
-    "stat4_val": "15+", "stat4_label": "Países"
+    "stat3_val": "98%", "stat3_label": "Satisfação dos Clientes"
   },
   "services": {
     "badge": "Serviços",
@@ -58,13 +57,17 @@
     "required": "Este campo é obrigatório",
     "invalid_email": "Por favor, insira um e-mail válido",
     "invalid_url": "Por favor, insira uma URL válida",
-    "min_message": "Por favor, forneça mais detalhes (pelo menos 10 caracteres)"
+    "min_message": "Por favor, forneça mais detalhes (pelo menos 10 caracteres)",
+    "status_loading": "Carregando formulário...",
+    "status_success": "🚀 Mensagem enviada! Retornaremos em até 24 horas.",
+    "status_error": "Algo deu errado. Por favor, tente novamente ou nos envie um e-mail."
   },
   "footer": {
     "tagline": "Talentos Tech Globais",
     "linkedin": "LinkedIn",
     "about": "Sobre Nós",
-    "rights": "Todos os direitos reservados."
+    "rights": "Todos os direitos reservados.",
+    "lgpd": "Política de Privacidade (LGPD)"
   },
   "jobs_page": {
     "badge": "Vagas Abertas",

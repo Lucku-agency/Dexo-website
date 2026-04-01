@@ -1,17 +1,37 @@
 "use client";
 
-import { useTranslations } from "next-intl";
+import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function About() {
   const t = useTranslations("about");
+  const locale = useLocale();
+  const isPt = locale === "pt";
 
+  // 3 stats (15+ Countries removed)
   const stats = [
     { val: t("stat1_val"), label: t("stat1_label") },
     { val: t("stat2_val"), label: t("stat2_label") },
     { val: t("stat3_val"), label: t("stat3_label") },
-    { val: t("stat4_val"), label: t("stat4_label") },
+  ];
+
+  const checklistItems = [
+    {
+      en: "Validated candidates only — no guesswork",
+      pt: "Profissionais pré-validados — sem tentativa e erro",
+      accent: "purple",
+    },
+    {
+      en: "U.S. market expertise since 2016",
+      pt: "Experiência sólida no mercado dos EUA desde 2016",
+      accent: "cyan",
+    },
+    {
+      en: "200+ successful placements across 15+ countries",
+      pt: "Mais de 200 alocações bem-sucedidas em mais de 15 países",
+      accent: "purple",
+    },
   ];
 
   return (
@@ -37,7 +57,7 @@ export default function About() {
             <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(124,58,237,0.3) 0%, rgba(34,211,238,0.15) 100%)" }} />
             {/* Stats overlay bottom */}
             <div className="absolute bottom-0 left-0 right-0 p-6" style={{ background: "linear-gradient(to top, rgba(9,12,22,0.95) 0%, transparent 100%)" }}>
-              <div className="grid grid-cols-4 gap-2">
+              <div className="grid grid-cols-3 gap-2">
                 {stats.map((stat, i) => (
                   <div key={i} className="text-center">
                     <div className="text-xl font-bold gradient-text">{stat.val}</div>
@@ -66,14 +86,10 @@ export default function About() {
               {t("desc")}
             </p>
             <div className="flex flex-col gap-3 pt-2">
-              {[
-                { en: "Validated candidates only — no guesswork", accent: "purple" },
-                { en: "U.S. market expertise since 2016", accent: "cyan" },
-                { en: "200+ successful placements across 15+ countries", accent: "purple" },
-              ].map((item, i) => (
+              {checklistItems.map((item, i) => (
                 <div key={i} className="flex items-center gap-3">
                   <div className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${item.accent === "purple" ? "bg-purple" : "bg-cyan"}`} />
-                  <span className="text-gray-300 text-sm">{item.en}</span>
+                  <span className="text-gray-300 text-sm">{isPt ? item.pt : item.en}</span>
                 </div>
               ))}
             </div>

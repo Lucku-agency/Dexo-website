@@ -13,8 +13,7 @@
     "desc": "DEXO is a global recruitment consultancy specialized in connecting U.S. companies with top-tier Brazilian tech talent. With over 8 years of international recruitment experience, we understand what great looks like.",
     "stat1_val": "8+", "stat1_label": "Years Experience",
     "stat2_val": "200+", "stat2_label": "Placements",
-    "stat3_val": "98%", "stat3_label": "Client Satisfaction",
-    "stat4_val": "15+", "stat4_label": "Countries"
+    "stat3_val": "98%", "stat3_label": "Client Satisfaction"
   },
   "services": {
     "badge": "Services",
@@ -58,13 +57,17 @@
     "required": "This field is required",
     "invalid_email": "Please enter a valid email",
     "invalid_url": "Please enter a valid URL",
-    "min_message": "Please provide more details (at least 10 characters)"
+    "min_message": "Please provide more details (at least 10 characters)",
+    "status_loading": "Loading form...",
+    "status_success": "🚀 Message sent! We'll get back to you within 24 hours.",
+    "status_error": "Something went wrong. Please try again or email us directly."
   },
   "footer": {
     "tagline": "Global Tech Talent",
     "linkedin": "LinkedIn",
     "about": "About Us",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "lgpd": "Privacy Policy (LGPD)"
   },
   "jobs_page": {
     "badge": "Open Positions",

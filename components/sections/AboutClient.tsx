@@ -4,7 +4,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import {
   Target, Eye, Star, Handshake, Zap, Shield,
-  Users, Globe, TrendingUp, CheckCircle2, ArrowRight,
+  Users, TrendingUp, CheckCircle2, ArrowRight,
   Building2, Cpu, ShoppingCart, HeartPulse, Banknote, Rocket
 } from "lucide-react";
 import Image from "next/image";
@@ -16,7 +16,6 @@ const values = [
   { key: "v4", icon: Handshake, color: "#22D3EE" },
 ];
 
-// Bilingual industries data
 const industriesData = {
   en: [
     { icon: Banknote, label: "Fintech & Banking", desc: "Connecting quantitative engineers and fintech specialists to innovate financial products." },
@@ -36,6 +35,7 @@ const industriesData = {
   ],
 };
 
+// 5 services (Onboarding Support removed)
 const servicesData = {
   en: [
     { title: "Permanent Placement", desc: "End-to-end search, vetting, and placement of full-time tech professionals." },
@@ -43,7 +43,6 @@ const servicesData = {
     { title: "Team Outsourcing", desc: "Dedicated tech teams that operate as a seamless extension of your company." },
     { title: "Technical Vetting", desc: "Rigorous skills assessment — technical interviews, English testing, and culture fit." },
     { title: "Talent Strategy", desc: "Consulting on how to build, scale and retain global tech talent over time." },
-    { title: "Onboarding Support", desc: "We stay with you through onboarding to ensure successful team integration." },
   ],
   pt: [
     { title: "Contratação Permanente", desc: "Busca, triagem e colocação completa de profissionais tech em tempo integral." },
@@ -51,26 +50,6 @@ const servicesData = {
     { title: "Outsourcing de Times", desc: "Times tech dedicados que operam como extensão perfeita da sua empresa." },
     { title: "Triagem Técnica", desc: "Avaliação rigorosa de habilidades — entrevistas técnicas, teste de inglês e fit cultural." },
     { title: "Estratégia de Talentos", desc: "Consultoria sobre como construir, escalar e reter talentos tech globais ao longo do tempo." },
-    { title: "Suporte ao Onboarding", desc: "Permanecemos com você durante a integração para garantir o sucesso do time." },
-  ],
-};
-
-const solutionsData = {
-  en: [
-    { title: "DEXO Match Engine", desc: "Proprietary matching algorithm that aligns candidate profiles to role requirements with precision." },
-    { title: "DEXO Vetting System", desc: "Multi-layer candidate evaluation combining technical, language, and soft-skill assessment." },
-    { title: "DEXO Talent Pool", desc: "Pre-vetted database of 1,000+ Brazilian tech professionals ready to be presented." },
-    { title: "DEXO Fast Track", desc: "Accelerated hiring program for urgent roles — first candidates within 5 business days." },
-    { title: "DEXO Global Network", desc: "Active ecosystem of U.S. companies, Brazilian universities, and tech communities." },
-    { title: "DEXO Partnership", desc: "Long-term engagement model with volume discounts and dedicated account management." },
-  ],
-  pt: [
-    { title: "DEXO Match Engine", desc: "Algoritmo proprietário de matching que alinha perfis de candidatos aos requisitos da vaga com precisão." },
-    { title: "DEXO Vetting System", desc: "Avaliação multicamada de candidatos combinando testes técnicos, de idioma e soft skills." },
-    { title: "DEXO Talent Pool", desc: "Banco de dados pré-triado com mais de 1.000 profissionais tech brasileiros prontos para apresentação." },
-    { title: "DEXO Fast Track", desc: "Programa acelerado de contratação para vagas urgentes — primeiros candidatos em até 5 dias úteis." },
-    { title: "DEXO Global Network", desc: "Ecossistema ativo de empresas americanas, universidades e comunidades tech brasileiras." },
-    { title: "DEXO Partnership", desc: "Modelo de engajamento de longo prazo com descontos por volume e gestão de conta dedicada." },
   ],
 };
 
@@ -89,18 +68,17 @@ const whyChecklist = {
   ],
 };
 
+// 3 stats (15+ Countries removed)
 const statsData = {
   en: [
     { value: "8+", label: "Years of Experience", icon: TrendingUp },
     { value: "200+", label: "Successful Placements", icon: Users },
     { value: "98%", label: "Client Satisfaction", icon: CheckCircle2 },
-    { value: "15+", label: "Countries Served", icon: Globe },
   ],
   pt: [
     { value: "8+", label: "Anos de Experiência", icon: TrendingUp },
     { value: "200+", label: "Colocações Realizadas", icon: Users },
     { value: "98%", label: "Satisfação dos Clientes", icon: CheckCircle2 },
-    { value: "15+", label: "Países Atendidos", icon: Globe },
   ],
 };
 
@@ -111,7 +89,6 @@ export default function AboutClient() {
 
   const industries = isPt ? industriesData.pt : industriesData.en;
   const services = isPt ? servicesData.pt : servicesData.en;
-  const solutions = isPt ? solutionsData.pt : solutionsData.en;
   const checklist = isPt ? whyChecklist.pt : whyChecklist.en;
   const stats = isPt ? statsData.pt : statsData.en;
 
@@ -161,9 +138,9 @@ export default function AboutClient() {
         </div>
       </section>
 
-      {/* ── STATS BAR ────────────────────────────────────── */}
+      {/* ── STATS BAR (3 stats) ───────────────────────────── */}
       <section style={{ background: "rgba(124,58,237,0.06)", borderTop: "1px solid rgba(255,255,255,0.06)", borderBottom: "1px solid rgba(255,255,255,0.06)" }}>
-        <div className="max-w-5xl mx-auto px-6 py-10 grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="max-w-4xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map(({ value, label, icon: Icon }, i) => (
             <motion.div
               key={i}
@@ -227,7 +204,6 @@ export default function AboutClient() {
             className="relative h-80 md:h-[440px] rounded-2xl overflow-hidden"
             style={{ border: "1px solid rgba(255,255,255,0.08)" }}
           >
-            {/* Different image: diverse tech team */}
             <Image
               src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=80"
               alt={isPt ? "Time diverso de tecnologia" : "Diverse tech team"}
@@ -329,7 +305,6 @@ export default function AboutClient() {
               className="relative h-64 rounded-2xl overflow-hidden hidden md:block"
               style={{ border: "1px solid rgba(255,255,255,0.07)" }}
             >
-              {/* Unique image: financial data / trading screens */}
               <Image
                 src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&w=900&q=80"
                 alt={isPt ? "Telas de dados financeiros" : "Financial data screens"}
@@ -362,7 +337,7 @@ export default function AboutClient() {
         </div>
       </section>
 
-      {/* ── SERVICES ─────────────────────────────────────── */}
+      {/* ── SERVICES (5 blocks, centered) ────────────────── */}
       <section id="services" className="px-6 py-20">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 items-center mb-14">
@@ -373,9 +348,9 @@ export default function AboutClient() {
               className="relative h-64 rounded-2xl overflow-hidden hidden md:block order-last md:order-first"
               style={{ border: "1px solid rgba(255,255,255,0.07)" }}
             >
-              {/* Unique image: interview / talent screening */}
+              {/* Replaced with available professional interview image */}
               <Image
-                src="https://images.unsplash.com/photo-1551836022-deb4988cc6d0?auto=format&fit=crop&w=900&q=80"
+                src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=900&q=80"
                 alt={isPt ? "Processo de entrevista de talentos" : "Talent interview process"}
                 fill
                 className="object-cover opacity-70"
@@ -402,7 +377,8 @@ export default function AboutClient() {
             </motion.div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {/* flex-wrap + justify-center so 5 cards center the last row */}
+          <div className="flex flex-wrap gap-4 justify-center">
             {services.map(({ title, desc }, i) => (
               <motion.div
                 key={i}
@@ -410,7 +386,7 @@ export default function AboutClient() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.07 }}
-                className="glass-card p-6 flex flex-col gap-2"
+                className="glass-card p-6 flex flex-col gap-2 w-full sm:w-[calc(50%-8px)] lg:w-[calc(33.333%-11px)]"
               >
                 <div className="flex items-center gap-2 mb-1">
                   <span className="w-1.5 h-1.5 rounded-full bg-cyan inline-block" />
@@ -423,69 +399,8 @@ export default function AboutClient() {
         </div>
       </section>
 
-      {/* ── SOLUTIONS ────────────────────────────────────── */}
-      <section id="solutions" className="px-6 py-20" style={{ background: "rgba(13,24,48,0.8)", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-12 items-center mb-14">
-            <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }}>
-              <span className="text-xs font-bold uppercase tracking-widest mb-3 block" style={{ color: "#22D3EE" }}>
-                {isPt ? "Soluções" : "Solutions"}
-              </span>
-              <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-tight mb-4">
-                {isPt ? (
-                  <>Ferramentas proprietárias que <span className="gradient-text">aceleram resultados</span></>
-                ) : (
-                  <>Proprietary tools that <span className="gradient-text">accelerate results</span></>
-                )}
-              </h2>
-              <p className="text-gray-400 leading-relaxed">
-                {isPt
-                  ? "A metodologia e as ferramentas internas da DEXO foram desenvolvidas para tornar a contratação tech internacional mais rápida, confiável e de menor risco."
-                  : "DEXO's internal methodology and tooling are purpose-built to make international tech hiring faster, more reliable, and lower risk — for both companies and candidates."}
-              </p>
-            </motion.div>
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="relative h-64 rounded-2xl overflow-hidden hidden md:block"
-              style={{ border: "1px solid rgba(255,255,255,0.07)" }}
-            >
-              {/* Unique image: code / tech / algorithm */}
-              <Image
-                src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80"
-                alt={isPt ? "Algoritmo e código" : "Algorithm and code"}
-                fill
-                className="object-cover opacity-60"
-                sizes="50vw"
-              />
-              <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(124,58,237,0.25) 0%, transparent 70%)" }} />
-            </motion.div>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            {solutions.map(({ title, desc }, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, y: 16 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.07 }}
-                className="glass-card p-6 flex flex-col gap-2"
-              >
-                <div className="flex items-center gap-2 mb-1">
-                  <span className="w-1.5 h-1.5 rounded-full inline-block" style={{ background: "linear-gradient(90deg,#7C3AED,#22D3EE)" }} />
-                  <h4 className="font-semibold text-white text-sm">{title}</h4>
-                </div>
-                <p className="text-gray-400 text-xs leading-relaxed">{desc}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ── WHY DEXO ─────────────────────────────────────── */}
-      <section className="px-6 py-20">
+      <section className="px-6 py-20" style={{ background: "rgba(13,24,48,0.8)", borderTop: "1px solid rgba(255,255,255,0.06)" }}>
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -494,7 +409,6 @@ export default function AboutClient() {
             className="relative h-80 rounded-2xl overflow-hidden"
             style={{ border: "1px solid rgba(255,255,255,0.07)" }}
           >
-            {/* Unique image: global handshake / partnership */}
             <Image
               src="https://images.unsplash.com/photo-1562564055-71e051d33c19?auto=format&fit=crop&w=900&q=80"
               alt={isPt ? "Parceria global de negócios" : "Global business partnership"}

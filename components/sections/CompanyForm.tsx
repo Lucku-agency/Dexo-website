@@ -1,10 +1,13 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
+import { Loader2 } from "lucide-react";
 
 export default function CompanyForm() {
   const t = useTranslations("form");
+  const [loaded, setLoaded] = useState(false);
 
   return (
     <section id="contact" className="py-24 px-6" style={{ background: "linear-gradient(180deg, transparent 0%, rgba(124,58,237,0.05) 50%, transparent 100%)" }}>
@@ -30,15 +33,23 @@ export default function CompanyForm() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5, delay: 0.15 }}
-          className="glass-card p-2 overflow-hidden"
-          style={{ minHeight: "600px" }}
+          className="glass-card p-2 overflow-hidden relative"
+          style={{ minHeight: "620px" }}
         >
+          {/* Loading state */}
+          {!loaded && (
+            <div className="absolute inset-0 flex flex-col items-center justify-center gap-3 z-10" style={{ background: "rgba(15,22,41,0.6)" }}>
+              <Loader2 size={28} className="animate-spin" style={{ color: "#22D3EE" }} />
+              <span className="text-sm text-gray-400">{t("status_loading")}</span>
+            </div>
+          )}
           <iframe
             className="clickup-embed clickup-dynamic-height w-full"
             src="https://forms.clickup.com/90171069955/f/2kz9ung3-737/TSSGMCH1XCTHUWDHZV"
             width="100%"
-            height="600"
+            height="620"
             style={{ background: "transparent", border: "none", borderRadius: "10px" }}
+            onLoad={() => setLoaded(true)}
           />
         </motion.div>
       </div>

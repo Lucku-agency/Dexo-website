@@ -92,7 +92,7 @@ export default function Navbar() {
             </button>
           </div>
           <a
-            href="#contact"
+            href={`/${locale}#contact`}
             className="bg-purple hover:bg-purple-light text-white text-sm font-medium px-5 py-2 rounded-lg transition-all glow-purple"
           >
             {t("hire")}
@@ -149,7 +149,7 @@ export default function Navbar() {
             </button>
           </div>
           <a
-            href="#contact"
+            href={`/${locale}#contact`}
             className="bg-purple text-white text-sm font-medium px-5 py-2 rounded-lg text-center"
             onClick={() => setMenuOpen(false)}
           >

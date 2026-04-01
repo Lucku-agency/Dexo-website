@@ -1,9 +1,13 @@
 "use client";
 
+import { useLocale } from "next-intl";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function GlobalBanner() {
+  const locale = useLocale();
+  const isPt = locale === "pt";
+
   return (
     <section className="relative py-32 px-6 overflow-hidden">
       {/* Background image */}
@@ -26,12 +30,20 @@ export default function GlobalBanner() {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <p className="text-cyan text-sm font-semibold tracking-widest uppercase mb-4">Brazil &rarr; United States</p>
+          <p className="text-cyan text-sm font-semibold tracking-widest uppercase mb-4">
+            {isPt ? "Brasil → Estados Unidos" : "Brazil → United States"}
+          </p>
           <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
-            The bridge between <span className="gradient-text">world-class talent</span> and the companies building tomorrow
+            {isPt ? (
+              <>A ponte entre <span className="gradient-text">talentos de alto nível</span> e as empresas que estão construindo o futuro</>
+            ) : (
+              <>The bridge between <span className="gradient-text">world-class talent</span> and the companies building tomorrow</>
+            )}
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed max-w-2xl mx-auto">
-            With deep roots in Brazil&apos;s booming tech ecosystem and a proven track record in U.S. markets, DEXO gives you access to engineers, developers, and specialists that transform teams.
+            {isPt
+              ? "Com raízes profundas no ecossistema tech brasileiro em expansão e um histórico comprovado nos mercados americanos, a DEXO oferece acesso a engenheiros, desenvolvedores e especialistas que transformam times."
+              : "With deep roots in Brazil's booming tech ecosystem and a proven track record in U.S. markets, DEXO gives you access to engineers, developers, and specialists that transform teams."}
           </p>
         </motion.div>
       </div>

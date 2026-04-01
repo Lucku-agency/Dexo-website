@@ -3,6 +3,7 @@
 import { useTranslations, useLocale } from "next-intl";
 import Link from "next/link";
 import Image from "next/image";
+import LGPDModal from "@/components/sections/LGPDModal";
 
 // LinkedIn SVG inline (lucide-react version doesn't export Linkedin)
 const LinkedInIcon = () => (
@@ -61,7 +62,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-white/5 text-center">
+        <div className="mt-10 pt-6 border-t border-white/5 text-center flex flex-col items-center gap-3">
+          <LGPDModal />
           <p className="text-gray-600 text-sm">
             &copy; {new Date().getFullYear()} DEXO. {t("rights")}
           </p>
