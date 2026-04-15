@@ -5,6 +5,7 @@ import { useTranslations, useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, Clock, Calendar, X, CheckCircle2, ChevronRight, ArrowRight } from "lucide-react";
 import { getActiveJobs, getDaysRemaining, type Job } from "@/lib/jobs-data";
+import CandidateForm from "@/components/sections/CandidateForm";
 
 export default function JobsClient() {
   const t = useTranslations("jobs_page");
@@ -219,19 +220,11 @@ export default function JobsClient() {
                 <div className="p-6">
                   <button
                     onClick={() => setShowForm(false)}
-                    className="flex items-center gap-1 text-sm text-gray-400 hover:text-white mb-4 transition-colors"
+                    className="flex items-center gap-1 text-sm text-gray-400 hover:text-white mb-6 transition-colors"
                   >
-                    &larr; {locale === "pt" ? "Voltar a vaga" : "Back to job"}
+                    &larr; {locale === "pt" ? "Voltar à vaga" : "Back to job"}
                   </button>
-                  <div className="w-full" style={{ minHeight: "600px" }}>
-                    <iframe
-                      className="clickup-embed clickup-dynamic-height w-full"
-                      src="https://forms.clickup.com/90171069955/f/2kz9ung3-737/TSSGMCH1XCTHUWDHZV"
-                      width="100%"
-                      height="600"
-                      style={{ background: "transparent", border: "1px solid rgba(255,255,255,0.1)", borderRadius: "8px" }}
-                    />
-                  </div>
+                  <CandidateForm jobTitle={getTitle(selectedJob)} />
                 </div>
               )}
             </motion.div>
